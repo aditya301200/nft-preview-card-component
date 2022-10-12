@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --main-bg: #0d192b;
+    --card-bg: #14253d;
+    --line-color: #2f415b;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.container {
+    background-color: var(--card-bg);
+    width: 30vw;
+    height: 90vh;
+    position: absolute;
+    top: 8vh;
+    left: 35vw;
+    border-radius: 10px;
+    border: 20px solid transparent;
+    box-shadow: 5px 5px 1px hsl(215, 51%, 70%);
+}
+
+#main-image {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+#heading {
+    color: var(--white);
+    font-family: sans-serif;
+    font-weight: 750;
+    margin-top: 10px;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#price {
+    color: #00fff7;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row img {
+    vertical-align: -2px;
+}
+
+hr {
+    border: .5px solid var(--line-color);
+}
+
+.creator img {
+    width: 35px;
+    border: 2.5px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.creator {
+    display: flex;
+    max-width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#name {
+    color: var(--white);
+}
+
+.attribution {
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a{
+    color: #00fff7;
+}
+
+a:hover {
+    color: var(--white);
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 500px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 400px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 600px;
+        left: 10%;
+    }
+}
